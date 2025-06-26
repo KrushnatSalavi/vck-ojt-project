@@ -12,7 +12,7 @@ const HomePage = () => {
 
           <h1 id="headline">Welcome to Vivekanand</h1><h1 id="headline2">collage</h1>
           <p id="journy-text">Your journey to excellence starts here.</p>
-          <button id="apply-btn">Apply Now</button>
+          <button id="apply-btn"><Link to="/addmission">Apply Now!</Link></button>
         </div>
 
         <div>
@@ -46,8 +46,8 @@ const HomePage = () => {
         </div>
 
 
-        <div class="explore-section">
-          <p class="explore-text">
+        <div className="explore-section">
+          <p className="explore-text">
             Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.
           </p>
 

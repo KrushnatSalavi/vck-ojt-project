@@ -37,20 +37,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    object-fit: contain;
+    position: relative;
+    object-fit: cover;
 }
 
-
-#banner-image {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    filter: brightness(60%);
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 #headline {
@@ -132,9 +122,13 @@
 .campus-img1 {
     width: 45%;
     border-radius: 10px;
-    background-image: url("/students-studying.jpeg");
+    background-image: url("/students-studying.jpg");
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    height: 200px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: cover;
 }
 
 .campus-img2 {
@@ -143,9 +137,17 @@
     background-image: url("/campus.jpg");
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    height: 200px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: cover;
 }
 
-.campus-img:hover {
+.campus-img1:hover {
+    transform: scale(1.02);
+}
+
+.campus-img2:hover {
     transform: scale(1.02);
 }
 
@@ -213,175 +215,71 @@
     font-family: Arial, sans-serif;
 }
 
-
-
-body390 {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
-}
-
-
-.body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-.inner-body {
-  padding: 2rem;
-}
-
-
-#home-head {
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-#headline, #headline2 {
-  font-size: 2.5rem;
-  margin: 0.5rem 0;
-}
-
-#journy-text {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-#apply-btn {
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  background-color: #2e7d32;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#apply-btn:hover {
-  background-color: #1b5e20;
-}
-
-
-.home-text1, .home-text2 {
-  max-width: 900px;
-  margin: auto;
-  text-align: justify;
-  margin-bottom: 1.5rem;
-  padding: 0 1rem;
-  font-size: 1rem;
-}
-
-
-#choose-text {
-  text-align: center;
-  margin-top: 3rem;
-  font-size: 1.8rem;
-}
-
-#why-list {
-  list-style: none;
-  padding: 0;
-  max-width: 800px;
-  margin: 1rem auto;
-}
-
-#why-list .list {
-  padding: 0.5rem;
-  border-bottom: 1px solid #ccc;
-  font-size: 1rem;
-}
-
-
-.section-title {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-}
-
-
-.campus-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.campus-img1, .campus-img2 {
-  width: 100%;
-  max-width: 400px;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-}
-
-
-.campus-img1 {
-  background-image: url('/Images/campus1.jpg');
-}
-
-.campus-img2 {
-  background-image: url('/Images/campus2.jpg');
-}
-
-
-.explore-section {
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.explore-text, .ready-text {
-  font-size: 1.1rem;
-  margin: 1rem auto;
-  max-width: 800px;
-}
-
-.explore-button {
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  background-color: #1565c0;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.explore-button a {
-  color: white;
-  text-decoration: none;
-}
-
-.explore-button:hover {
-  background-color: #0d47a1;
-}
-
+/* -----------------------------Responsiv Home page---------------------------------------*/
 
 @media (max-width: 768px) {
-  #headline, #headline2 {
-    font-size: 2rem;
-  }
 
-  #journy-text, .home-text1, .home-text2, .explore-text, .ready-text {
-    font-size: 1rem;
-  }
+    .inner-body{
+    margin-top: 120px;
+    margin-bottom: 100px;
+    height: 400px;
+}
 
-  .campus-img1, .campus-img2 {
-    height: 150px;
-  }
+    #headline,
+    #headline2 {
+    font-size: 25px;
+    }
+    #headline{
+        margin-top:-10px;
+        font-size: 20px;
+    }
 
-  .explore-button {
-    width: 80%;
-  }
+    #journy-text,
+    .home-text1,
+    .home-text2,
+    .explore-text,
+    .ready-text {
+        font-size: 1rem;
+    }
+    
+    #journy-text{
+        margin-top: -0px;
+    }
+
+    #headline2{
+        margin-top: -5px;
+        font-size: 20px;
+    }
+
+    #home-head{
+        height: 200px;
+    }
+
+    .campus-img1,
+    .campus-img2 {
+        height: 150px;
+        width: 300px;
+    }
+
+    .explore-button {
+        width: 80%;
+    
+}
+
+#choose-text{
+    left: 0;
+    justify-content: start;
+}
+
+.explore-text{
+    margin-top: -50px;
 }
 
 
 
+}
 
-/*---------------------------------- About page Css *-------------------------------------/
-
+/*---------------------------------- About page Css *-------------------------------------*/
 
 
 .section-title {
@@ -479,6 +377,43 @@ body390 {
     margin-left: 25px;
     font-size: 19px;
 }
+
+/* -------------------------AboutPage Responsiv */
+
+
+@media (max-width: 768px) {
+.about-title{
+    font-size: 30px;
+}
+
+.about-text{
+    margin-left: -20px;
+    font-size: 15px;
+}
+
+.about-text2{
+    margin-left: -20px;
+    font-size: 15px;
+}
+
+.section-title{
+    font-size: 25px;
+}
+
+#our-values{
+    font-size: 15px;
+}
+
+#history{
+    font-size: 25px;
+}
+
+#history-text{
+    font-size: 15px;
+}
+
+}
+
 
 
 /* CoursePageStyle */
@@ -653,6 +588,84 @@ hr {
     background-color: rgb(10, 109, 18);
 }
 
+/* -------------------------Responsiv for CoursePage */
+
+@media (max-width: 768px) {
+
+    #course-head,
+    #capmpus-title,
+    #ug-headline,
+    #fee-structure{
+    font-size: 25px;
+    }
+
+    #academic-text{
+        font-size: 15px;
+    }
+
+    /* Default table styles */
+#fee-table {
+  width: 70%;
+  border-collapse: collapse;
+}
+
+#fee-table th, #fee-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #fee-table,
+  #fee-table thead,
+  #fee-table tbody,
+  #fee-table th,
+  #fee-table td,
+  #fee-table tr {
+    display: block;
+  }
+
+  #fee-table thead {
+    display: none;
+  }
+
+  #fee-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  #fee-table td {
+    text-align: start;
+    padding-left: 20%;
+    position: relative;
+  }
+
+  #fee-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+
+}
+
+#abt-course{
+    font-size: 15px;
+}
+
+#inquire-btn{
+    margin-left: 75px;
+    font-size: 12px;
+    width: 130px;
+}
+    
+}
+
 /* Contact pageStyla */
 
 #contact-title {
@@ -708,6 +721,23 @@ hr {
 }
 
 
+/* -------------------------Responsiv style Contact*/
+
+@media (max-width:768px){
+    #contact-title,
+    .genral-hedline{
+        font-size: 25px;
+    }
+
+    #abt-collage,
+    #con-text,
+    .abt-collage2{
+        font-size: 15px;
+    }
+
+}
+
+
 
 /* -----------------------AddmissionPage Style----------------- */
 
@@ -737,7 +767,7 @@ th {
     background-color: #f2f2f2;
 }
 
-#procc-list li{
+#procc-list li {
     margin-left: 25px;
     margin-bottom: 20px;
     list-style-type: decimal;
@@ -749,3 +779,12 @@ th {
     padding-inline-start: 40px;
 
 }
+
+/* ------------------Responsiv Admission */
+@media (max-width:768){
+
+#addmission-hed h1{
+    font-size: 5px;
+}
+}
+
