@@ -222,7 +222,7 @@
     .inner-body{
     margin-top: 120px;
     margin-bottom: 100px;
-    height: 400px;
+    height: 500px;
 }
 
     #headline,
@@ -742,9 +742,10 @@ hr {
 /* -----------------------AddmissionPage Style----------------- */
 
 
-#addmission-hed {
+#addmission-hed,
+#addmission-hed{
     text-align: center;
-    font-size: 45px;
+    font-size: 25px;
     color: #2271c6;
     margin-top: 40px;
 }
