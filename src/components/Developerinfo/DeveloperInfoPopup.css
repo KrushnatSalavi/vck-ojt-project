@@ -19,6 +19,7 @@
   position: relative;
   max-width: 400px; /* Max width for larger screens */
   width: 90%; /* Responsive width */
+  background-image: url("");
 }
 .close-button {
   position: absolute;
