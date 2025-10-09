@@ -1,12 +1,10 @@
-import './Footer.css'
-
-const Footer = () =>{
-return(
-  <div id='footer'>
-    <p id="footer-text">© 2025 Vivekanand College. All rights reserved.</p>
-  </div>
-);
-
+// src/components/Footer/Footer.jsx
+import './Footer.css'; // Import the CSS for the Footer
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <p>&copy; {new Date().getFullYear()} Vivekanand College. All rights reserved.</p>
+    </footer>
+  );
 }
-
 export default Footer;

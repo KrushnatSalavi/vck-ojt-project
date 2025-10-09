@@ -14,11 +14,12 @@ function Header() {
   return (
     <header className="main-header">
       {" "}
+      {/* Add a wrapper for header content */}
       <div className="college-name">
         <Link to="/">Vivekanand College</Link>{" "}
-        
+        {/* College Name/Logo for desktop & mobile */}
       </div>
-      
+      {/* Desktop Navigation */}
       <nav className="navbar desktop-nav">
         <Link to="/" className="nav-item">
           Home
@@ -26,18 +27,18 @@ function Header() {
         <Link to="/about" className="nav-item">
           About
         </Link>
-        <Link to="/course" className="nav-item">
+        <Link to="/courses" className="nav-item">
           Courses
         </Link>
         <Link to="/contact" className="nav-item">
           Contact
         </Link>
-        <Link to="/addmission" className="nav-item btn primary-btn">
+        <Link to="/admissions" className="nav-item btn primary-btn">
           Apply Now!
         </Link>{" "}
-       
+        {/* Apply Now button */}
       </nav>
-      
+      {/* Mobile Hamburger Button */}
       <button className="hamburger-menu" onClick={toggleDrawer}>
         <span className="hamburger-icon"></span>
         <span className="hamburger-icon"></span>
@@ -61,7 +62,7 @@ function Header() {
           Contact
         </Link>
         <Link
-          to="/addmission"
+          to="/admissions"
           className="nav-item btn primary-btn"
           onClick={closeDrawer}
         >
